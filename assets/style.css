@@ -53,10 +53,10 @@ img, picture{
   display: block;
 }
 main{
-  width: 36rem;
-  margin: 1rem;
+  width: 34.5rem;
+  margin:1rem 1rem .4rem 1rem;
   background-color: var(--White);
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow:var(--bxshd);
 }
 input,
@@ -84,26 +84,30 @@ select {
   font-family:var(--fntfamily);
   font-weight: 800;
   color: var(--Very-dark-blue);
-  font-size:22.5px;
+  font-size:20px;
 }
 .notify .notify-num{
   background-color: var(--Blue);
-  padding: .2rem .8rem;
+  padding: .1rem .5rem;
   color: var(--White);
   font-weight: 800;
+  font-size: 12px;
   border: 1px solid  var(--Blue);
   border-radius: .25rem;
 }
 .allread{
   color: var(--Dark-grayish-blue);
   margin-left: auto;
+  font-size: 14px;
 }
 .notification{
   position: relative;
-  margin-top: 1rem;
-  padding: .5rem .4rem;
+  padding:.15rem 0rem;
   font-size: .8em;
   color: var(--Dark-grayish-blue);
+}
+.notifications-list .notification:nth-last-child(-n+4) {
+  margin-top:1.5rem;
 }
 .notification strong{
   color: var(--Very-dark-blue);
@@ -125,7 +129,8 @@ select {
 }
 .notifications-list .notification:nth-child(-n+3) .notification-content {
   background-color:var(--Very-light-grayish-blue);
-  padding:.5rem 0;
+  padding:.8rem 0;
+  border-radius:5px;
 }
 .commented-picture,
 .avatar-container{
@@ -159,13 +164,17 @@ select {
   background-color: var(--Light-grayish-blue-1);
   border: 1px solid #bcbcbc00;
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width:500px) {
   main{
-      margin: .7rem;
+      width: 20rem;
       padding: .5rem 1rem;
+      margin-top:20rem;
   }
   .notifications-container {
     margin:.7rem;
+  }
+  .attribution{
+    font-size:12px;
   }
 }
 
