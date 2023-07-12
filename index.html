@@ -10,9 +10,11 @@
   <main>
     <div class="notifications-container">
       <div class="notifications-header">
-          <h1>Notifications</h1>
-          <span id="unread-num" class="notifications-number">3</span>
-        <span class="mark-all-read" onclick="MarklAllRead()">Mark all as read</span>
+          <div class="notify">
+            <h1>Notifications</h1>
+            <span id="unread-num" class="notify-num">3</span>
+          </div>
+        <span class="allread" onclick="MarklAllRead()">Mark all as read</span>
       </div>
       <div class="notifications-list">
         <div class="notification">
@@ -73,7 +75,8 @@
         <div class="notification">
           <div class="notification-content">
             <div class="avatar-container">
-              <img src="assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith"></div>
+              <img src="assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith">
+            </div>
             <div><strong class="hover">Kimberly Smith</strong> commented on your picture
               <div>1 week ago</div>
             </div>
@@ -108,6 +111,11 @@
     </div>
 
   </main>
+  <footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://cletsymedia.github.io/Prof-Portfolio/#contact" target="_blank">CletsyMedia</a>.
+  </div>
   <script src="./assets/main.js"></script>
 </body>
 </html>
