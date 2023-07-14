@@ -101,7 +101,6 @@ select {
   font-size: 14px;
 }
 .notification{
-  position: relative;
   padding:.15rem 0rem;
   font-size: .8em;
   color: var(--Dark-grayish-blue);
@@ -114,18 +113,26 @@ select {
   font-weight:var(--Fw2);
 }
 .notification-unread-icon{
-  position: absolute;
-  top:1.35rem;
-  height: 10px;
-  width: 10px;
+  height:8px;
+  width:8px;
   background-color: var(--Red);
   border-radius: 50%;
   display: inline-block;
+  align-items: center;
+  margin-left: 0.4rem;
 }
+
 .notification-content{
   display: flex;
   gap:.2rem;
   align-items: center;
+}
+.notification-content .bold{
+  font-weight: 800;
+  cursor: pointer;
+}
+.notification-content .bold:hover{
+  color:var(--Blue);
 }
 .notifications-list .notification:nth-child(-n+3) .notification-content {
   background-color:var(--Very-light-grayish-blue);
@@ -164,11 +171,16 @@ select {
   background-color: var(--Light-grayish-blue-1);
   border: 1px solid #bcbcbc00;
 }
+.attribution a{
+  color: var(--Dark-grayish-blue);
+}.attribution a:hover{
+  color: var(--Blue);
+}
 @media only screen and (max-width:500px) {
   main{
-      width: 20rem;
-      padding: .5rem 1rem;
-      margin-top:20rem;
+      width: 22rem;
+      padding: .5rem 0;
+      margin-top:14rem;
   }
   .notifications-container {
     margin:.7rem;
@@ -178,7 +190,10 @@ select {
   }
 }
 
-
+/* JavaScript */
+.notification-unread-icon.active{
+  display: none;
+}
 
 
 
